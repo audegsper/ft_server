@@ -6,7 +6,7 @@
 #    By: dohykim <dohykim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/09 06:26:01 by dohykim           #+#    #+#              #
-#    Updated: 2021/05/09 15:38:29 by dohykim          ###   ########.fr        #
+#    Updated: 2021/05/09 16:53:49 by dohykim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,7 +61,7 @@ service mysql start
 mysql < var/www/html/phpmyadmin/sql/create_tables.sql -u root --skip-password
 #''가 복사하면 다른 문자로 들어가니 주의!
 echo "CREATE DATABASE IF NOT EXISTS wordpress;" | mysql -u root --skip-password
-echo "GRANT ALL PRIVILEGES ON *.* TO 'jisokang'@'localhost' IDENTIFIED BY '1234' WITH GRANT OPTION" | mysql -u root --skip-password
+echo "GRANT ALL PRIVILEGES ON *.* TO 'dohykim'@'localhost' IDENTIFIED BY '1234' WITH GRANT OPTION" | mysql -u root --skip-password
 # MySQL 명령어
 # DB에 사용자 및 권한 추가
 # GRANT(수여하다)
