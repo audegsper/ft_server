@@ -6,7 +6,7 @@
 #    By: dohykim <dohykim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/09 06:20:48 by dohykim           #+#    #+#              #
-#    Updated: 2021/05/09 16:30:49 by dohykim          ###   ########.fr        #
+#    Updated: 2021/05/09 16:37:30 by dohykim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,9 +33,9 @@ RUN		apt-get update && apt-get -y upgrade && apt-get -y install \
 		wget
 
 COPY	./srcs/run.sh ./
-#COPY	./srcs/default ./tmp
-#COPY	./srcs/wp-config.php ./tmp
-#COPY	./srcs/config.inc.php ./tmp
+COPY	./srcs/default ./tmp
+COPY	./srcs/wp-config.php ./tmp
+COPY	./srcs/config.inc.php ./tmp
 # COPY [src] [dst]
 # src를 dst로 복사
 
