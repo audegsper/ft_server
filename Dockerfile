@@ -6,7 +6,7 @@
 #    By: dohykim <dohykim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/09 06:20:48 by dohykim           #+#    #+#              #
-#    Updated: 2021/05/09 06:24:37 by dohykim          ###   ########.fr        #
+#    Updated: 2021/05/09 16:30:49 by dohykim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ FROM	debian:buster
 # 프로젝트를 시작할 베이스 image를 지정한다.
 # ft_server 과제에서는 `debian:buster`로 설정.
 
-LABEL	maintainer="jisokang <jisokang@student.42seoul.kr>"
+LABEL	maintainer="dohykim <dohykim@student.42seoul.kr>"
 # LABEL 명령은 이미지의 버전 정보, 작성자, 코멘트와 같이 이미지 상세 정보를 작성해두기 위한 명령 입니다.
 # https://nirsa.tistory.com/70
 # maintainer = Docker image를 생성한 사람/기관
@@ -33,9 +33,9 @@ RUN		apt-get update && apt-get -y upgrade && apt-get -y install \
 		wget
 
 COPY	./srcs/run.sh ./
-COPY	./srcs/config.inc.php ./tmp
-COPY	./srcs/default ./tmp
-COPY	./srcs/wp-config.php ./tmp
+#COPY	./srcs/default ./tmp
+#COPY	./srcs/wp-config.php ./tmp
+#COPY	./srcs/config.inc.php ./tmp
 # COPY [src] [dst]
 # src를 dst로 복사
 
